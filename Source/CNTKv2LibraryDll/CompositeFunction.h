@@ -221,6 +221,8 @@ namespace CNTK
                                                                           const std::unordered_set<Variable>& inputsToExcludeGradientsFor,
                                                                           bool allocateNetworkMatrices);
 
+        static Variable GetMappingVariable(const Variable& variable);
+
         template <typename ElementType>
         static Microsoft::MSR::CNTK::ComputationNodeBasePtr CreateComputationNode(const Variable& variable,
                                                                                   Function* function,
